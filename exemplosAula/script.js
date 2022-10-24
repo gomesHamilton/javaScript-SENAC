@@ -5,9 +5,14 @@ window.prompt("escreva seu nome: ") */
 
 var nota1 = Number(prompt("escreva sua nota1: "))
 var nota2 = Number(prompt("escreva sua nota2: "))
-var nota3 = Number(prompt("escreva sua nota3: "))
-var media = (nota1 + nota2 + nota3)/3
-alert(`A soma entre ${nota1}, ${nota2} e ${nota3} é igual a média de ${media}`)
+var media = (nota1 + nota2)/2
+alert(`A soma entre ${nota1} e ${nota2} é igual a média de ${media.toFixed(2).replace('.', ',')}`)
+
+// .toFixed(número de casas decimais)
+// .replace('elemento que deseja substituir', 'elemento que deseja colocar no lugar')
+// .toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+// ${nome da variável}
+// `` aspas para 
 
 var nome = prompt("Qual é seu nome?")
 document.write(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`);
